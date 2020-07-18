@@ -1,0 +1,248 @@
+*{
+	margin:0;
+	padding:0;
+}
+body {
+  font-family: arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  background: grey;
+}
+.container {
+  width: 95%;
+  margin: auto;
+  max-width:1200px;
+}
+/***************
+Start Header Area 
+***************/
+.logo-area {
+  width: 300px;
+  float: left;
+  overflow: hidden;
+}
+.logo-area img {
+  width: 100%;
+  height:100px;
+}
+header {
+  background: #fff;
+  overflow: hidden;
+}
+.menu-area ul {
+  list-style: none;
+  float: right;
+}
+.menu-area ul li {
+  display: inline-block;
+  padding: 40px 5px;
+}
+.menu-area ul li a {
+  color: #aa9f9f;
+  text-decoration: none;
+  transition: all 0.3s; 
+  padding:8px 20px;
+  border-radius:5px;
+}
+.menu-area ul li a:hover, .menu-area ul li.active a {
+  background:#81ecec;  
+  color: #000;
+}
+/***************
+Start Hero Area 
+***************/
+.hero-area {
+  background: linear-gradient(rgba(52, 73, 94,0.8), rgba(52, 73, 94,0.8)), url(../images/pc.jpeg), no-repeat;
+  background-size: cover;
+  background-position: top center;
+  text-align:center;
+}
+.hero-area h1 {
+  color: #fff;
+  font-size: 45px;
+  text-align: center;
+  line-height: 1.4;
+  letter-spacing:1px;
+  text-transform: uppercase;
+  width: 80%;
+  margin: auto;
+}
+.hero-area {
+  padding: 150px 0;
+}
+.hero-button{
+	margin-top:40px;
+}
+.hero-area a {
+  display: inline-block;
+  color: #fff;
+  background: #1abc9c;
+  padding: 18px 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 4px;
+  transition:all 0.3s;
+}
+.hero-area a:hover {
+  background: #8e44ad;
+  transition: all 0.3s;
+}
+
+/***********
+Start Content Area
+***********/
+.Main-content-area {
+  overflow: hidden;
+  background: #ecf0f1;
+  padding: 60px 0px;
+}
+.content-area {
+  width: 70%;
+  float: left;
+  margin-right: 5%;
+}
+.content-area article {
+  margin-bottom: 22px;
+}
+.content-area .post-thumbnail {
+  width:25%;
+  margin-right:2%;
+  float:left;
+  background-color:#6c5ce7;
+  padding:5px;
+  box-sizing: border-box;
+  margin-top:8px;
+}
+.content-area .post-thumbnail img {
+  width:100%;
+  vertical-align:middle;
+}
+.post-text {
+  width:73%;
+  float:left;
+}
+.content-area article h2 {
+  font-size: 34px;
+  margin-bottom: 10px;  
+  border-bottom: 1px solid #34495e;
+}
+.content-area article p {
+  font-size: 18px;
+  text-align: justify;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  margin-bottom: 19px;
+}
+.content-area article p a{
+	text-decoration: none;
+}
+/***********
+Start Aside Area
+***********/
+.sidebar-area {
+  float: left;
+  width: 25%;
+}
+.sidebar-area aside{
+	margin-bottom:25px;
+}
+.sidebar-area h2 {
+  font-size: 35px;
+  border-bottom: 1px solid #2c3e50;
+  margin-bottom: 13px;
+}
+.sidebar-area ul {
+  list-style: none;
+}
+.sidebar-area ul li {
+  margin-bottom: 5px;
+  border-bottom: 1px dotted #2c3e50;
+}
+.sidebar-area ul li a {
+  text-decoration: none;
+  color: #2c3e50;
+  font-size: 18px;
+}
+/**********
+Start Footer Area
+**********/
+footer {
+  padding: 20px;
+  background: #95a5a6;
+}
+footer p {
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  text-transform: ;
+}
+footer p a {
+  color: #fff;
+  text-decoration: none;
+}
+footer p a:hover {
+  text-decoration: underline;
+}
+
+/* Start Here Responsive Style */
+@media only screen and (max-width:991px){
+  .logo-area {
+    width:100%;
+    text-align: center;
+    margin:30px 0;
+    float:none;
+    border-bottom:5px solid yellow;
+  }
+  .logo-area img {
+    width: 250px;
+  }
+  .menu-area ul {
+    float: none;
+    width:100%;
+  }
+  .menu-area ul li {
+    display:block;
+    padding: 5px 0;
+  }
+  .menu-area ul li a {
+    display:block;
+  }
+  .content-area {
+    width: 100%;
+    float: none;
+    margin-right: 0;
+    padding-bottom:25px;
+    margin-bottom:25px;
+    overflow:hidden;
+    border-bottom:5px solid yellow;
+  }
+  .sidebar-area {
+    float: none;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width:767px) {
+   .content-area {
+    border-bottom:none;
+  }
+  .hero-area h1 {
+    font-size:30px;
+  }
+  .hero-area {
+    padding: 80px 0;
+  }
+}
+@media only screen and (max-width:580px) {
+  .content-area .post-thumbnail {
+    width: 100%;
+    margin-right: 0%;
+    float: none;
+    margin-bottom:15px;
+  }  
+  .post-text {
+    width: 100%;
+    float: none;
+    border-bottom:5px solid yellow;
+  }
+}
